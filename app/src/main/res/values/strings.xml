@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">cheburechek</string>
+
+    <string name="authorization_login">Login</string>
+    <string name="authorization_password">Password</string>
+    <string name="authorization_login_button">log in</string>
 </resources>
