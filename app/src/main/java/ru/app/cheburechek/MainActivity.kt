@@ -2,20 +2,16 @@ package ru.app.cheburechek
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import androidx.databinding.DataBindingUtil
-import androidx.lifecycle.ViewModelProvider
-import ru.app.cheburechek.databinding.ActivityMainBinding
+import androidx.navigation.NavController
+import androidx.navigation.Navigation
+
 
 class MainActivity : AppCompatActivity() {
 
-    private var viewModel: MainViewModel? = null
-
+    var navController: NavController? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
-        viewModel = ViewModelProvider(this)[MainViewModel::class.java]
-        binding.vm = viewModel
-        binding.lifecycleOwner = this
+        navController = Navigation.findNavController(this, R.id.nav_host_fragment);
     }
 }
