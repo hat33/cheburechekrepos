@@ -1,7 +1,13 @@
 <resources>
-    <string name="app_name">cheburechek</string>
+    <string name="app_name">MY WALLET</string>
 
     <string name="authorization_login">Login</string>
     <string name="authorization_password">Password</string>
     <string name="authorization_login_button">log in</string>
+
+    <string name="start_sign_up">sign up</string>
+    <string name="start_log_in">Log In</string>
+    <string name="start_continue_with_google">CONTINUE WITH GOOGLE</string>
+
+
 </resources>
