@@ -1,19 +1,16 @@
 package ru.app.cheburechek.start
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import ru.app.cheburechek.R
+import ru.app.cheburechek.core.base.ui.BaseFragment
+import ru.app.cheburechek.databinding.FragmentStartBinding
 
-internal class StartFragment: Fragment() {
+internal class StartFragment :
+    BaseFragment<FragmentStartBinding>(layoutId = R.layout.fragment_start) {
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
-       return inflater.inflate(R.layout.fragment_start, container, false)
+    override val viewModel: StartViewModel by viewModels()
+
+    override fun FragmentStartBinding.initialize() {
+        this.vm = viewModel
     }
 }
