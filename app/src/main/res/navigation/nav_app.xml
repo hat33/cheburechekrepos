@@ -6,7 +6,7 @@
     app:startDestination="@id/fragmentStart">
 
     <fragment android:id="@+id/fragmentStart"
-        android:name="ru.app.cheburechek.start.StartFragment"
+        android:name="ru.app.cheburechek.presentation.start.StartFragment"
         tools:layout="@layout/fragment_start">
 
     </fragment>

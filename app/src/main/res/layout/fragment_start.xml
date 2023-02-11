@@ -6,7 +6,7 @@
 
         <variable
             name="vm"
-            type="ru.app.cheburechek.start.StartViewModel" />
+            type="ru.app.cheburechek.presentation.start.StartViewModel" />
 
     </data>
 

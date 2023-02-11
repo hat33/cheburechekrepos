@@ -1,4 +1,4 @@
-package ru.app.cheburechek.start
+package ru.app.cheburechek.presentation.start
 
 import androidx.fragment.app.viewModels
 import ru.app.cheburechek.R
