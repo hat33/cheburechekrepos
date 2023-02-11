@@ -5,10 +5,22 @@
     android:id="@+id/nav_app"
     app:startDestination="@id/fragmentStart">
 
-    <fragment android:id="@+id/fragmentStart"
+    <fragment
+        android:id="@+id/fragmentStart"
         android:name="ru.app.cheburechek.presentation.start.StartFragment"
+        android:label="StartFragment"
         tools:layout="@layout/fragment_start">
 
+        <action
+            android:id="@+id/action_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="ru.app.cheburechek.presentation.login.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login"/>
+
 
 </navigation>
