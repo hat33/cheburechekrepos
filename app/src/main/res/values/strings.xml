@@ -9,5 +9,8 @@
     <string name="start_log_in">Log In</string>
     <string name="start_continue_with_google">CONTINUE WITH GOOGLE</string>
 
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+
 
 </resources>
