@@ -1,9 +1,10 @@
-package ru.app.cheburechek
+package ru.app.cheburechek.app
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
+import ru.app.cheburechek.R
 
 class MainActivity : AppCompatActivity() {
 
