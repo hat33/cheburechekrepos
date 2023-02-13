@@ -9,4 +9,10 @@ class StartViewModel: BaseViewModel() {
             StartFragmentDirections.actionToLoginFragment()
         )
     }
+
+    fun onSignUpClick() {
+        navigate(
+            StartFragmentDirections.actionToSignUpFragment()
+        )
+    }
 }

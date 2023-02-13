@@ -51,6 +51,7 @@
             android:layout_marginTop="40dp"
             android:backgroundTint="@color/primary_light"
             android:text="@string/start_sign_up"
+            android:onClick="@{() -> vm.onSignUpClick()}"
             app:cornerRadius="@dimen/space_5" />
 
         <com.google.android.material.button.MaterialButton

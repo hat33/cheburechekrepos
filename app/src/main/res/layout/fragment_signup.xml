@@ -7,7 +7,7 @@
 
         <variable
             name="vm"
-            type="ru.app.cheburechek.presentation.login.LoginViewModel" />
+            type="ru.app.cheburechek.presentation.signUp.SignUpViewModel" />
 
     </data>
 
@@ -16,18 +16,18 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.appbar.MaterialToolbar
-            android:id="@+id/fragment_login_toolbar"
+            android:id="@+id/fragment_signup_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:navigationIcon="@drawable/ic_close"
-            app:title="@string/start_log_in"
+            app:title="@string/start_sign_up"
             app:titleCentered="true" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/fragment_login_email"
+            android:id="@+id/fragment_signUp_name"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -37,7 +37,29 @@
             android:paddingBottom="@dimen/space_1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_login_toolbar">
+            app:layout_constraintTop_toBottomOf="@+id/fragment_signup_toolbar">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/auth_name"
+                android:inputType="textPassword" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/fragment_signUp_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_1"
+            android:paddingHorizontal="@dimen/space_4"
+            android:paddingTop="@dimen/space_1"
+            android:paddingBottom="@dimen/space_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fragment_signUp_name">
 
             <com.google.android.material.textfield.TextInputEditText
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -48,7 +70,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/fragment_login_password"
+            android:id="@+id/fragment_signUp_password"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,7 +80,7 @@
             android:paddingBottom="@dimen/space_1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/fragment_login_email">
+            app:layout_constraintTop_toBottomOf="@+id/fragment_signUp_email">
 
             <com.google.android.material.textfield.TextInputEditText
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -70,16 +92,18 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
-            android:id="@+id/login_log_in_button"
+            android:id="@+id/signup_sign_up_button"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginHorizontal="@dimen/space_3"
             android:layout_marginBottom="@dimen/space_3"
             android:backgroundTint="@color/primary_light"
-            android:text="@string/start_log_in"
+            android:text="@string/start_sign_up"
             app:cornerRadius="@dimen/space_5"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </layout>

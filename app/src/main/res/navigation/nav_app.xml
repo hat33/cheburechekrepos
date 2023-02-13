@@ -18,6 +18,14 @@
             app:exitAnim="@anim/nav_default_exit_anim"
             app:popEnterAnim="@anim/nav_default_pop_enter_anim"
             app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
+
+        <action
+            android:id="@+id/action_to_SignUpFragment"
+            app:destination="@id/signUpFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim"/>
     </fragment>
 
     <fragment
@@ -26,5 +34,10 @@
         android:label="LoginFragment"
         tools:layout="@layout/fragment_login"/>
 
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="ru.app.cheburechek.presentation.signUp.SignUpFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login"/>
 
 </navigation>
