@@ -15,16 +15,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <com.google.android.material.appbar.MaterialToolbar
+        <ru.app.uikit.toolbar.MyWalletToolbar
             android:id="@+id/fragment_login_toolbar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:navigationIcon="@drawable/ic_close"
-            app:title="@string/start_log_in"
-            app:titleCentered="true" />
+            app:leftActionClick="@{() -> vm.onCloseClick()}"
+            app:leftIconSrc="@drawable/ic_close"
+            app:title="@string/start_log_in" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/fragment_login_email"

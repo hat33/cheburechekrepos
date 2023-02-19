@@ -11,8 +11,5 @@ class LoginFragment: BaseFragment<FragmentLoginBinding>(R.layout.fragment_login)
 
     override fun FragmentLoginBinding.initialize() {
         this.vm = viewModel
-        this.fragmentLoginToolbar.setNavigationOnClickListener {
-            viewModel.onCloseClick()
-        }
     }
 }
