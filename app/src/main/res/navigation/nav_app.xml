@@ -36,7 +36,7 @@
 
     <fragment
         android:id="@+id/signUpFragment"
-        android:name="ru.app.cheburechek.presentation.signUp.SignUpFragment"
+        android:name="ru.app.cheburechek.presentation.sign_up.SignUpFragment"
         android:label="LoginFragment"
         tools:layout="@layout/fragment_login"/>
 

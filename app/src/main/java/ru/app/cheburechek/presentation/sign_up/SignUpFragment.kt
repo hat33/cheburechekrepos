@@ -1,4 +1,4 @@
-package ru.app.cheburechek.presentation.signUp
+package ru.app.cheburechek.presentation.sign_up
 
 import androidx.fragment.app.viewModels
 import ru.app.cheburechek.R
